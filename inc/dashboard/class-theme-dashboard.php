@@ -291,10 +291,12 @@ class Base_Dashboard_Settings {
 			</div>
 			<div class="base_theme_dashboard">
 				<div class="page-grid">
-					<div class="base_theme_dashboard_main">
-					</div>
-					<div class="base_theme_dashboard_pro">
-						<?php do_action( 'base_theme_dash_side_panel' ); ?>
+					<div class="base_theme_dashboard_panel">
+						<div class="base_theme_dashboard_main">
+						</div>
+						<div class="base_theme_dashboard_more">
+							<?php do_action( 'base_theme_after_dashboard_main' ); ?>
+						</div>
 					</div>
 					<div class="side-panel">
 						<div class="support-section sidebar-section components-panel">
